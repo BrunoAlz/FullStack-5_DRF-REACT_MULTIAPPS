@@ -1,13 +1,15 @@
-import NavBar from "./components/Navbar/NavBar";
+import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
     <div>
-      <NavBar/>
-      <h1>FODASE</h1>
-      <Footer />
+      <BrowserRouter>
+        <Header />
+        <h1>BODI</h1>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }
